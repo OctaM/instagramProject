@@ -17,6 +17,5 @@ const styles = StyleSheet.create ({
 	list: {
 		alignItems: 'center',
 		marginTop: 15,
-		backgroundColor: '#8b008b',
 	},
 })

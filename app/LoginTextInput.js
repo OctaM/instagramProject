@@ -4,10 +4,10 @@ import {View, TextInput, StyleSheet, TouchableOpacity, Text, Image} from 'react-
 export default class LoginTextInput extends Component {
     render() {
         return (
-            <View style = {{backgroundColor: "#8b008b"}}>
+            <View>
                 <View style={styles.containerView}>
-									<View style = {{alignItems:'center'}}>
-										<Image source={require('./img/instagram.png')}/>
+									<View style = {styles.logo}>
+										<Image source={require('./img/octaGram.png')}/>
 									</View>
                     <View style={styles.inputView}>
                         <View style={styles.fakeView}></View>
@@ -29,9 +29,10 @@ export default class LoginTextInput extends Component {
                     <View style={styles.txtContainerView}>
                         <View style={styles.fakeView}></View>
                         <View style={styles.textView}>
-                            <Text style={styles.firstText}>Forgot your login details?
-                            </Text>
-                            <Text style={styles.secondText}> Get help singing in.</Text>
+                            <Text style={styles.firstText}>Forgot your login details?</Text>
+														<TouchableOpacity>
+                            <Text style={styles.secondText}> Get help signing in.</Text>
+														</TouchableOpacity>
                         </View>
                         <View style={styles.fakeView}></View>
                     </View>
@@ -66,6 +67,10 @@ const styles = StyleSheet.create({
     containerView: {
 				marginBottom: 40,
     },
+		logo: {
+			alignItems: 'center',
+			marginBottom: 30,
+		},
     textInput: {
         flex: 0.85,
         borderRadius: 2,
@@ -94,11 +99,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderWidth: 1,
-        borderColor: '#c1e0f8',
+        borderColor: 'rgba(193,224,248,0.5)',
         borderRadius: 2
     },
     loginTxt: {
-        color: '#c1e0f8'
+        color: 'rgba(193,224,248,0.5)'
     },
     textView: {
         flex: 0.85,
@@ -114,7 +119,7 @@ const styles = StyleSheet.create({
         color: '#3897f0'
     },
     line: {
-        backgroundColor: '#808080',
+        backgroundColor: 'rgba(193,224,248,0.5)',
         flexDirection: 'column',
         flex: 0.35,
         height: 1
@@ -125,7 +130,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     or: {
-        color: '#808080',
+        color: 'rgba(193,224,248,0.5)',
         flex: 0.1,
         textAlign: 'center'
     },
@@ -152,6 +157,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderTopWidth: 1,
-        borderColor: '#808080'
+        borderColor: 'rgba(193,224,248,0.5)'
     }
 })
