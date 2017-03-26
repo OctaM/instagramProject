@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, TextInput, StyleSheet, TouchableOpacity, Text, Image} from 'react-native';
+import {Actions} from 'react-native-router-flux';
 
 export default class LoginTextInput extends Component {
     render() {
@@ -7,7 +8,7 @@ export default class LoginTextInput extends Component {
             <View>
                 <View style={styles.containerView}>
 									<View style = {styles.logo}>
-										<Image source={require('./img/octaGram.png')}/>
+										<Image source={require('../img/octaGram.png')}/>
 									</View>
                     <View style={styles.inputView}>
                         <View style={styles.fakeView}></View>
@@ -21,7 +22,8 @@ export default class LoginTextInput extends Component {
                     </View>
                     <View style={styles.loginView}>
                         <View style={styles.fakeView}></View>
-                        <TouchableOpacity style={styles.loginBtn}>
+                        <TouchableOpacity style={styles.loginBtn}
+                            onPress={() => Actions.newsFeed()} >
                             <Text style={styles.loginTxt}>Log In</Text>
                         </TouchableOpacity>
                         <View style={styles.fakeView}></View>
