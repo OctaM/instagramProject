@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, ScrollView, StyleSheet, Image} from 'react-native';
 import NewsFeedPost from './NewsFeedPost.js';
-import NavigationBar from 'react-native-navbar';
 
 export default class NewsFeed extends Component {
 
