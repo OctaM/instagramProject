@@ -49,7 +49,7 @@ class Photo extends Component {
             <View>
                 <Image style={{
                     height: 400,
-                    width: 400
+                    width: 400,
                 }} source={require('./Img/postPhoto.jpg')}/>
             </View>
         )
@@ -103,7 +103,9 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginBottom: 10
+        marginBottom: 10,
+        marginLeft: 10,
+        marginRight: 10,
     },
     userPhoto: {
         flexDirection: 'row',
@@ -114,6 +116,8 @@ const style = StyleSheet.create({
         marginTop: 10,
         justifyContent: 'space-between',
         borderBottomWidth: 1,
+        marginLeft: 10,
+        marginRight: 10,
         borderColor: 'rgba(0, 0, 0, 0.2)'
     },
     first: {
@@ -125,6 +129,7 @@ const style = StyleSheet.create({
     },
     commSection: {
       marginBottom: 25,
+      marginLeft: 10,
     },
     like: {
       flexDirection: 'row',
