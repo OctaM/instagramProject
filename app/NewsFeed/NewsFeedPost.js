@@ -87,10 +87,10 @@ class Comments extends Component {
             <View style={style.commSection}>
                 <View style={style.like}>
                     <Image source={require('./Img/likeCom.png')} style={{marginRight: 5}}/>
-                    <Text style={{fontWeight: 'bold'}}>1312 likes</Text>
+                    <Text style={style.boldText}>1312 likes</Text>
                 </View>
                 <View style={style.comment}>
-                  <Text style={{fontWeight: 'bold'}}>Vladimir Putin</Text>
+                  <Text style={style.boldText}>Vladimir Putin</Text>
                   <Text> #bombingWithFriends</Text>
                 </View>
             </View>
@@ -130,6 +130,10 @@ const style = StyleSheet.create({
     commSection: {
       marginBottom: 25,
       marginLeft: 10,
+    },
+    boldText: {
+      fontWeight: 'bold',
+      color: 'black',
     },
     like: {
       flexDirection: 'row',
