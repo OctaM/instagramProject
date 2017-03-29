@@ -3,6 +3,7 @@ import {View, Text, ScrollView, StyleSheet, Image} from 'react-native';
 import NewsFeedPost from './NewsFeedPost.js';
 import NewsFeedStoryes from './NewsFeedStoryes.js'
 import NewsFeedNavBar from './NewsFeedNavBar.js'
+import NewsFeedSuggestions from './NewsFeedSuggestions.js'
 
 export default class NewsFeed extends Component {
 
@@ -11,10 +12,11 @@ export default class NewsFeed extends Component {
             <View style={style.container}>
                 <View style={style.alignScroll}>
                     <NewsFeedNavBar/>
-                    <NewsFeedStoryes/>
                     <ScrollView showsVerticalScrollIndicator={false}>
+                        <NewsFeedStoryes/>
                         <NewsFeedPost/>
                         <NewsFeedPost/>
+                        <NewsFeedSuggestions/>
                         <NewsFeedPost/>
                         <NewsFeedPost/>
                     </ScrollView>
@@ -31,5 +33,5 @@ const style = StyleSheet.create({
     alignScroll: {
         flex: 0.9,
         flexDirection: 'column'
-    },
+    }
 })
